@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#slss",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -128,9 +129,19 @@
                 "file": "Markdown (Re)Introduction.md"
               }
             }
+          },
+          {
+            "id": "11b8b0ebf4d88db5",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -147,7 +158,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3b0ef7a6243beb95",
+  "active": "42c3beaca27e7b40",
   "lastOpenFiles": [
     "Cheetahpic.md",
     "Markdown (Re)Introduction.md",
