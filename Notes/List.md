@@ -1,6 +1,8 @@
 A list in Python is a collection of items  
 We can store *different* values in a list  
 **Order matters** in a list
+
+A list is also a [[Type]] of data
 # Creating A List
 To make a list, we use brackets \[ \] to surround our list  
 We separate out the items using `,`
