@@ -88,6 +88,6 @@ aaaa
 
 # [[Design]]
 
-# [[Lists]]
+# [[List]]
 
 # [[Modules]]
