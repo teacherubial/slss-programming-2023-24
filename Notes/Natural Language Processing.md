@@ -73,6 +73,7 @@ favourite_food
 fave_food
 date_of_birth
 student_number
+screen_size
 ```
 
 Bad names are like this:
@@ -88,6 +89,6 @@ aaaa
 
 # [[Design]]
 
-# [[List]]
+# [[List|Lists]]
 
 # [[Modules]]
