@@ -4,7 +4,7 @@
 
 # Find the problem
 
-korean_food = ["bibimbap", "Budae jiggae", "kimbap"]
+korean_food = ["bibimbap", "budae jiggae", "kimbap"]
 
 fave_food = input("What's your favourite food? ")
 
