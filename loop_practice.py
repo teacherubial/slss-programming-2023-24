@@ -80,3 +80,13 @@ for i in range(1, 100):
 # Can we count by any other number?
 for i in range(100, 0, -1):
     print(i)
+
+# 1. Print all even numbers between 
+#    1200 and 1500 inclusive.
+#    Use a for loop. 
+
+# 2. Print all odd numbers between
+#    -150 and 0 inclusive.
+
+# Once you have your solution,
+# copy and paste your answer in #i-made-this
