@@ -72,3 +72,11 @@ for i in range(5):
 # at 1?
 for i in range(10):
     print(f"{i + 1}. The quick brown fox...")
+
+# For example: can we start at another number?
+for i in range(1, 100):
+    print(i)
+
+# Can we count by any other number?
+for i in range(100, 0, -1):
+    print(i)
