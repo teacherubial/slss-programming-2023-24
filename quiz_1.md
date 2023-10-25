@@ -40,7 +40,7 @@ Part 2
 13. B
 14. A
 15. C
-16. E Thanks for catching that
+16. A
 17. B
 18. A
-19. C
+19. E Thanks for catching that Josh
