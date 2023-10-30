@@ -14,3 +14,5 @@ An example of using these types of data:
 favourite_food = "tempura"
 my_age = 16      # my_age is of type int or integer
 ```
+
+## Converting Types
