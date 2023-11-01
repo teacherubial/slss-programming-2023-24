@@ -16,3 +16,15 @@ my_age = 16      # my_age is of type int or integer
 ```
 
 ## Converting Types
+
+There are some **special functions** built in to Python that helps to convert data from one type to another.
+
+```python
+intro_string = "My age is"
+my_age = 16
+
+# Recall
+"My name is" + "Jim"        # "My name isJim"
+"My name is" + " " + "Jim"  # "My name is Jim"
+intro_string + my_age       # This is going to BREAK
+```
