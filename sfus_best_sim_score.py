@@ -23,12 +23,35 @@ profile = [
 ]
 
 # Initialize our top similarity score and their name
+top_sim_score = 0
+top_sim_name = ""
 
-# For every line of data in the file (string)
-    # convert the line of data into a list
+with open("./data.csv") as f:
+    # Throw away the header line
+    header = f.readline()
 
-    # initialize the CURRENT sim score
+    # For every line of data in the file (string)
+    for line in f:
+        # convert the line of data into a list
+        current_likes = line.split(",")
 
-    # for every item in our PROFILE
-        # if that item is in the data's list
-            # increase the sim score by 1
+        # initialize the CURRENT sim score
+        # store the current person's name
+        current_sim_score = 0
+        current_name = current_likes[1]
+
+        # sim score algo
+        for item in profile:
+            if item in current_likes:
+                current_sim_score += 1
+        
+        # print the current sim_score
+        print(f"{current_name} - Score: {current_sim_score}")
+
+        # Update the top score if this is highest
+        if current_sim_score > top_sim_score:
+            top_sim_score = current_sim_score
+            top_sim_name = current_name
+
+print("🌟🌟🌟🌟 TOP SIMILAR PERSON 🌟🌟🌟🌟")
+print(f"{top_sim_name} - Score: {top_sim_score}")

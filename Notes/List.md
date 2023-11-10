@@ -23,3 +23,4 @@ some_list[-2]     # "Tim"
 
 Inside the brackets, we say the *index* of the value we want  
 Python uses *0-index* counting, which means we start counting at 0
+
