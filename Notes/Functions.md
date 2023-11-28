@@ -32,3 +32,7 @@ def area_of_a_square(sidelength: float):
 
 area_of_a_square(12.2)
 ```
+
+## Functions with Return Values
+
+****
