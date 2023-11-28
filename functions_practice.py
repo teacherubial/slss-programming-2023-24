@@ -114,3 +114,26 @@ def pyramid(num_layers: int) -> None:
 pyramid(2)
 pyramid(3)
 pyramid(20)
+
+
+def pyramid_mirror(num_layers: int) -> None:
+    """Prints out a mirrored pyramid.
+
+    Params:
+    num_layers - number of layers of pyramid
+    """
+
+    for current_layer in range(1, num_layers + 1):
+        # Print the spaces then print the stars
+        # num_layers == 2
+        # " " * 1  +  stars(1)
+        # " " * 0   + stars(2)
+        # num_layers == 3
+        # " " * 2  + stars(1)
+        # " " * 1  + stars(2)
+        # " " * 0  + stars(3)
+        print(" " * (num_layers - current_layer) + stars(current_layer))
+
+
+pyramid_mirror(4)
+pyramid_mirror(20)
