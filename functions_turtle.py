@@ -98,15 +98,28 @@ def draw_fancy_tree(level: int, height: int) -> None:
         burt.color(original_colour[0])  # revert burt's colour
 
 
+def koch_edge(turtle, order, size):
+    if order == 0:
+        turtle.forward(size)
+    else:
+        for angle in [67, -134, 67, 0]:
+            koch_edge(turtle, order - 1, size / 3)
+            turtle.left(angle)
+
+
 # Set-up Burt to draw trees
 burt.color("brown")
-burt.setheading(90)  # points burt north
+# burt.setheading(90)  # points burt north
 burt.pu()
 burt.back(50)
 burt.pd()
-burt.width(4)  # trunk and branches thicker
-burt.speed(5)
+# burt.width(4)  # trunk and branches thicker
+burt.speed(0)
 
-draw_fancy_tree(4, 175)
+# draw_fancy_tree(4, 175)
+
+for i in range(3):
+    koch_edge(burt, 2, 500)
+    burt.right(120)
 
 turtle.done()
