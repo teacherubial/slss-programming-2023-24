@@ -3,6 +3,7 @@
 # 6 December 2023
 
 from functools import lru_cache
+
 import time
 
 
@@ -22,7 +23,7 @@ def factorial(num: int) -> int:
         return factorial(num - 1) * num
 
 
-@lru_cache(1000)
+@lru_cache(100)  # with cache/memoization
 def fib(n: int) -> int:
     """Calculate and return the nth
     Fibonacci number."""
@@ -34,23 +35,26 @@ def fib(n: int) -> int:
 
 
 def fib_itr(n: int) -> int:
-    last_num = 0
-    num = 1
-    res = 1
+    """Returns the nth Fibonacci number.
+    Calculates this iteratively."""
+    last_num, num, result = 0, 1, 0
 
-    for i in range(n - 1):
-        res = num + last_num
-        last_num, num = num, res
+    for _ in range(n - 1):
+        result = last_num + num
 
-    return res
+        num, last_num = result, num
 
+    return result
 
-time_initial = time.perf_counter()
-fib(400)
-time_final = time.perf_counter()
-print(time_final - time_initial)
 
 time_initial = time.perf_counter()
-fib_itr(400)
+fib_itr(100)
 time_final = time.perf_counter()
-print(time_final - time_initial)
+
+print(f"Iterative: {time_final-time_initial}")
+
+time_initial = time.perf_counter()
+fib(100)
+time_final = time.perf_counter()
+
+print(f"Recursive: {time_final-time_initial}")
