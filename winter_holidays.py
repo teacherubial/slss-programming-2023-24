@@ -29,15 +29,30 @@ def winter_holiday(good_or_bad: str) -> str:
         an event that happened to you during the holidays
         the event is selected part"""
 
+    good_events = [
+        "I got Lego for Christmas",
+        "I spent time with family and friends.",
+        "I ate a ton of delicious food.",
+        "I finished Supar Mario Wonder.",
+    ]
+    bad_events = [
+        "I didn't get what I wanted for Christmas.",
+        "I ate too much delicious food.",
+    ]
+
+    if good_or_bad.strip().lower() == "good":
+        return random.choice(good_events)
+    elif good_or_bad.strip().lower() == "bad":
+        return random.choice(bad_events)
+    else:
+        return "Sorry, I only take good or bad events."
+
 
 def main() -> None:
     # Runs all the things we want to test in our .py file
-    winter_holiday("good")
-    # "I got a Lego set for the first time in a long time."
-    # "I went to Richmond Centre to walk around aimlessly."
-    winter_holiday("bad")
-    # "I hoped to snowboard during the holiday and there was only rain."
-    # "I asked for a bidet for Christmas, instead I got a rando smart watch amazon."
+    print(winter_holiday("good"))
+    print(winter_holiday("bad"))
+    print(winter_holiday("boogabooga"))
 
 
 # If we're running THIS FILE using Python
